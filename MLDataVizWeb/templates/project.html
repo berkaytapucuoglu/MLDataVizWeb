@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/project.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="gradient-form" style="background-color: #161d2d">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-xl-10">
+            <div class="card rounded-3">
+              <div class="row g-0">
+                <div class="col-lg-6 left_part login_part">
+                  <div class="card-body p-md-5 mx-md-4">
+                    <div class="text-center">
+                      <img
+                        src="../static/img/pngwing.com.png"
+                        style="width: 150px"
+                        alt="logo"
+                      />
+                      <h4 class="mt-1 mb-5 mt-4 pb-1">We are The Ballers</h4>
+                    </div>
+
+                    <form id="login-form" action="/login" method="POST">
+                                        <p>Please Login to Your Account</p>
+
+                                        <div class="form-outline mb-1">
+                                            <input type="email" id="form2Example11" class="form-control" name="username" placeholder="Email" />
+                                            <label class="form-label" for="form2Example11"></label>
+                                        </div>
+
+                                        <div class="form-outline mb-3">
+                                            <input type="password" id="form2Example22" class="form-control" name="password" placeholder="Password" />
+                                            <label class="form-label" for="form2Example22"></label>
+                                        </div>
+
+                                       <div id="error-message" class="mb-3" style="display: none;"></div>
+
+
+                                        <div class="login_forgot_button mb-5">
+                                            <button class="btn btn-primary mb-4" style="width: 100%" type="submit">Log in</button>
+                                        </div>
+
+                                        <div class="d-flex align-items-center justify-content-center pb-4">
+                                            <p class="mb-0 me-2">Don't have an account?</p>
+                                            <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-danger create_new_button">Create new</button>
+                                        </div>
+                                    </form>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 left_part register_part display_off">
+                  <div class="card-body p-md-5 mx-md-4">
+                    <div class="text-center">
+                      <img
+                        src="../static/img/pngwing.com.png"
+                        style="width: 150px"
+                        alt="logo"
+                      />
+                      <h4 class="mt-1 mb-5 mt-4 pb-1">We are The Ballers</h4>
+                    </div>
+
+                   <form id="register-form" action="/register" method="POST">
+                    <p>Create an Account</p>
+
+                    <div class="form-outline mb-1">
+                      <input type="email" name="username" id="form2Example12" class="form-control" placeholder="Email">
+                      <label class="form-label" for="form2Example12"></label>
+                    </div>
+
+                    <div class="form-outline mb-3">
+                      <input type="password" name="password" id="form2Example23" class="form-control" placeholder="Password">
+                      <label class="form-label" for="form2Example23"></label>
+                    </div>
+
+                       <div id="success-message" class="mb-3" style="display: none;"></div>
+                       <div id="register-error-message" class="mb-3" style="display: none;"></div>
+
+
+
+                    <div class="login_forgot_button mb-5">
+                      <button class="btn btn-primary mb-4" style="width: 100%" type="submit">Create Account</button>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-center pb-4">
+                      <p class="mb-0 me-2">Already have an account ?</p>
+                      <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-danger login_button">Login</button>
+                    </div>
+                  </form>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-6 d-flex align-items-center gradient-custom-2 right_part"
+                >
+                  <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                    <div class="info">
+                      <h1 class="mb-4">Make ballers and trainers great.</h1>
+                      <h3 class="mb-4">
+                        <i class="fa-regular fa-circle-check me-1"></i>Display
+                        balance scores with charts, graphs, etc.
+                      </h3>
+                      <h3 class="mb-4">
+                        <i class="fa-regular fa-circle-check me-1"></i>Search
+                        for the desired player with the search bar.
+                      </h3>
+                      <h3 class="mb-4">
+                        <i class="fa-regular fa-circle-check me-1"></i>Get help
+                        with scores to keep track of players.
+                      </h3>
+                      <h3 class="mb-4">
+                        <i class="fa-regular fa-circle-check me-1"></i>Examines the balance scores of basketball players with data analysis.
+                      </h3>
+                        <h3 class="mb-4">
+                        <i class="fa-regular fa-circle-check me-1"></i>Examining deep insight statistics of basketball players with accurate machine learning algorithms.
+                      </h3>
+                        <h3 class="mb-4">
+                        <i class="fa-regular fa-circle-check me-1"></i>Allows coaches to monitor basketball players' health and performance.
+                      </h3>
+
+                      <h3 class="mb-4">
+                        <i class="fa-regular fa-circle-check me-1"></i>Trainer
+                        see the overall team improvement via charts, graphs,
+                        etc.
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <script src="../static/js/project.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/project.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+<body>
+    <main class="main_page">
+        <div class="container">
+            <div class="header">
+                <div class="logo" style="padding:20px">
+                    <img
+                        src="../static/img/pngwing.com.png"
+                        style="width: 100px"
+                        alt="logo"
+                      />
+                </div>
+                <div class="searchbar">
+    <form action="{{ url_for('search') }}" method="get">
+        <div class="input-group mb-3">
+            <input type="text" class="search-bar" name="q" id="searchBar" placeholder=" Player name" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-primary" style="background-color: #004182" type="submit" id="searchButton">Search</button>
+        </div>
+    </form>
+</div>
+            </div>
+            <div class="navigate-bar mt-3">
+                <ul class="navigate-items">
+                  <li class="btn mt-3">
+                    <a class="nav-link" href="{{ url_for('main_page') }}">Players</a>
+                  </li>
+                  <li class="btn mt-3">
+                    <a class="nav-link" href="{{ url_for('how_it_works') }}">How it works ?</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="accordion mt-5" id="accordionExample">
+
+                <div class="accordion1">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        Berkay Tapucuoğlu
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+                                <div class="accordion_element mt-2">
+                                    <a href="/exercise/1/1">Exercise 1</a>
+                                </div>
+                                <div class="accordion_element mt-4">
+                                    <a href="/exercise/1/2">Exercise 2</a>
+                                </div>
+                                <div class="accordion_element mt-4">
+                                    <a href="/exercise/1/3">Exercise 3</a>
+                                </div>
+                                <div class="accordion_element mt-4">
+                                    <a href="/exercise/1/4">Exercise 4</a>
+                                </div>
+                            </div>
+    </div>
+  </div>
+                </div>
+
+                <div class="accordion2">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Egemen Ayhan
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+ <div class="accordion-body">
+                                <div class="accordion_element mt-2">
+                                    <a href="/exercise/2/5">Exercise 1</a>
+                                </div>
+                                <div class="accordion_element mt-4">
+                                    <a href="/exercise/2/6">Exercise 2</a>
+                                </div>
+                                <div class="accordion_element mt-4">
+                                    <a href="/exercise/2/7">Exercise 3</a>
+                                </div>
+                                <div class="accordion_element mt-4">
+                                    <a href="/exercise/2/8">Exercise 4</a>
+                                </div>
+                            </div>
+    </div>
+  </div>
+                </div>
+
+                <div class="accordion3">
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        İlhan Erten
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+  <div class="accordion-body">
+                                <div class="accordion_element mt-2">
+                                    <a href="/exercise/3/9">Exercise 1</a>
+                                </div>
+                                <div class="accordion_element mt-4">
+                                    <a href="/exercise/3/10">Exercise 2</a>
+                                </div>
+                                <div class="accordion_element mt-4">
+                                    <a href="/exercise/3/11">Exercise 3</a>
+                                </div>
+                                <div class="accordion_element mt-4">
+                                    <a href="/exercise/3/12">Exercise 4</a>
+                                </div>
+                            </div>
+    </div>
+  </div>
+</div>
+
+                              <div class="accordion4">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseOne">
+        Aziz Yıldırım
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+ <div class="accordion-body">
+                                <div class="accordion_element mt-2">
+                                    <a href="/exercise/4/13">Exercise 1</a>
+                                </div>
+                                <div class="accordion_element mt-4">
+                                    <a href="/exercise/4/14">Exercise 2</a>
+                                </div>
+                                <div class="accordion_element mt-4">
+                                    <a href="/exercise/4/15">Exercise 3</a>
+                                </div>
+                                <div class="accordion_element mt-4">
+                                    <a href="/exercise/4/16">Exercise 4</a>
+                                </div>
+                            </div>
+
+      </div>
+    </div>
+  </div>
+                </div>
+
+
+            <div class="accordion second_accordion" id="accordionExample2">
+
+                              <div class="accordion5">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseOne">
+        Fred Santos
+      </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+  <div class="accordion-body">
+                                <div class="accordion_element mt-2">
+                                    <a href="/exercise/5/17">Exercise 1</a>
+                                </div>
+                                <div class="accordion_element mt-4">
+                                    <a href="/exercise/5/18">Exercise 2</a>
+                                </div>
+                                <div class="accordion_element mt-4">
+                                    <a href="/exercise/5/19">Exercise 3</a>
+                                </div>
+                                <div class="accordion_element mt-4">
+                                    <a href="/exercise/5/20">Exercise 4</a>
+                                </div>
+                            </div>
+    </div>
+  </div>
+                </div>
+
+                              <div class="accordion6">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseOne">
+        Jude Bellingham
+      </button>
+    </h2>
+    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+ <div class="accordion-body">
+                                <div class="accordion_element mt-2">
+                                    <a href="/exercise/6/21">Exercise 1</a>
+                                </div>
+                                <div class="accordion_element mt-4">
+                                    <a href="/exercise/6/22">Exercise 2</a>
+                                </div>
+                                <div class="accordion_element mt-4">
+                                    <a href="/exercise/6/23">Exercise 3</a>
+                                </div>
+                                <div class="accordion_element mt-4">
+                                    <a href="/exercise/6/24">Exercise 4</a>
+                                </div>
+                            </div>
+    </div>
+  </div>
+                </div>
+
+                              <div class="accordion7">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseOne">
+        Nick Calathes
+      </button>
+    </h2>
+    <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+ <div class="accordion-body">
+                                <div class="accordion_element mt-2">
+                                    <a href="/exercise/7/25">Exercise 1</a>
+                                </div>
+                                <div class="accordion_element mt-4">
+                                    <a href="/exercise/7/26">Exercise 2</a>
+                                </div>
+                                <div class="accordion_element mt-4">
+                                    <a href="/exercise/7/27">Exercise 3</a>
+                                </div>
+                                <div class="accordion_element mt-4">
+                                    <a href="/exercise/7/28">Exercise 4</a>
+                                </div>
+                            </div>
+    </div>
+  </div>
+                </div>
+
+                <div class="accordion8">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseOne">
+        Arda Güler
+      </button>
+    </h2>
+    <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+  <div class="accordion-body">
+                                <div class="accordion_element mt-2">
+                                    <a href="/exercise/29">Exercise 1</a>
+                                </div>
+                                <div class="accordion_element mt-4">
+                                    <a href="/exercise/30">Exercise 2</a>
+                                </div>
+                                <div class="accordion_element mt-4">
+                                    <a href="/exercise/31">Exercise 3</a>
+                                </div>
+                                <div class="accordion_element mt-4">
+                                    <a href="/exercise/32">Exercise 4</a>
+                                </div>
+                            </div>
+    </div>
+  </div>
+                </div>
+        </div>
+
+
+        </div>
+    </main>
+
+</body>
+
+<script src="../static/js/project.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+
+
+
+
+
+
+</html>
